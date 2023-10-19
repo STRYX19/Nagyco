@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: url(hatter.jpg);
+    background-size: cover;
+    background-position: center;
+    color: blanchedalmond;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background: transparent; 
+}
+.logo img{
+height: auto;
+width: 20%;
+
+mix-blend-mode: color-burn;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 5px;
+    margin: 0 25px;
+    color: blanchedalmond;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all ease .50s;
+    text-transform: uppercase; 
+    transition: all .55s ease; 
+    display: inline-block;  
+    
+    border-bottom: 2px solid transparent;
+}
+.navbar a:hover{
+    border: 1px solid white;
+   background: rgb(71, 61, 51)    ;
+    transform: translateX(8px);
+}
+.nav-in{
+    display: flex;
+    align-items: center;
+}
+.nav-in a{
+    color: white;
+    font-size: 15px;
+}
+.btn{
+    display:flex;
+    padding: 9px 20px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 0 20px;
+
+    transition: all ease .50s;
+}
+.btn:hover{
+    transform: scale(1.07);
+    background-color: transparent
+}
+#menu-icon{
+    font-size: 38px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 5px;
+    display: none;
+}
+@media (max-width: 1440px){
+    header{
+        padding: 25px 5%;
+    }
+}
+@media (max-width: 1170px){
+    header{
+        padding: 20px 3%;
+    }
+    .logo img{
+        width: 70%;
+        max-width: 250px;
+        height: auto;
+    }
+    .navbar a{
+        margin: 0 15px;
+    }
+}
+@media (max-width: 1030px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 70px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background: grey;
+        transition: all 0.5s ease-in-out;
+    }
+    .navbar a{
+        display: block;
+        padding: 0;
+        margin: 0px 0px 50px 0px;
+        font-size: 2.1rem;
+        font-weight: 500;
+        border-bottom: none;
+    }
+    .navbar a:hover{
+        color: blanchedalmond;
+        border-bottom: none;
+    }
+    .navbar a:active{
+        border-bottom: none;
+    }
+    .navbar.open{
+        left: 0;
+    }
+}
+@media (max-width: 570px){
+    .logo img{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    .nav-in a{
+        display: none;
+    }
+}
+
+#kepek{
+    width: 10px;
+    height: 10px;
+}
+table, th, td {
+    margin: auto;
+    padding-top: 30px;
+}
+.container{  
+display: flex;
+width: 100%;
+padding: 10px;
+margin: auto;
+flex-direction: row;
+justify-content: center;
+background: grey;
+overflow: auto;
+}
+.gallery{
+  transition: 1s;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    border: 1px solid white;
+    float: left;
+    width: 300px;
+}
+.gallery img{
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.gallery :hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.container2{
+    display: flex;
+width: 100%;
+padding: 10px;
+margin: auto;
+flex-direction: row;
+justify-content: center;
+background: grey;
+overflow: auto;
+}
+.nagybetu{
+    justify-content: center;
+    text-transform: uppercase; 
+    font-size: 40px;
+}
+.betu{
+    font-size: 30px;
+    justify-content: center;
+    text-align: left;
+    padding-left: 80px;
+    text-transform: uppercase;
+}
+.falbor{
+    font-size: 30px;
+    justify-content: center;
+    text-align: left;
+    padding-left: 80px;
+}
+.container3{
+    display: flex;
+width: 100%;
+padding: 10px;
+margin: auto;
+flex-direction: row;
+justify-content: left;
+background: grey;
+overflow: auto;
+text-transform: uppercase;
+}
+.betu2{
+    font-size: 25px;
+    justify-content: center;
+    text-align: left;
+    padding-left: 80px;
+    padding: 20px;
+}
+.gallery3{
+    background-color: black;
+    
+    
+}
+.kozep{
+    text-align: center;
+    margin: auto;
+    padding-top: 130px;
+    justify-content: center;
+}
+.container5{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    background: transparent;
+    overflow: auto;
+}
